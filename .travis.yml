@@ -9,7 +9,7 @@ script:
 notifications:
   slack:
     rooms:
-    - brasildotnet:SEU9Mda3txMP3Db9dTDDeVZaqVyRRcybpyM6SDwtQFcRMvg9AKuU1LX3VFv/UO5rWya7RX+zpIwaoel+XRZ023uMXLc2AisSfmyohlMBd2CuhBIjHF7qZuWr3tcolGHvM3ht4zs9SPGtp5363dPosd6kE+n4CjdhfA69K7Ytsu68jmVK7FEW6GbwqfIEhG22I//zYnec3muPoJInqky/uK1jXpRa9mTKqhnRDi2v9n7OxvIQTprR9H91VuNUdNKBjgHGHhtZZ405joeolObrbq0cSfBGROGFtROMprbFpRYkqInsRgJqbeF8YdH6bNgyVVMNkGxCadl7ouoSxsBX6CV5ZkmwwWs5U91d9UZNabe2GdfRecgVdAVkZWFDzikf1rROPM1Zhym2HVdsZbIv3VSJVBPALS/2q9k1aP4xYmFzmuNRX/DsfNs5MZA0bM6E+II0ET/NdFuv4BF+GQDH0qBq18MwBhFmUl8JjPoSZyI33XZXTiMfTrf96qF9yQeNHf2s9qPX//Mn/qJE9uLdpdOM0EDk5awq5/8DJShGc2/cgYeX+Qrf+4hU+6dHtgaPP22wqPwGpVKT938SUEYwh47N1P3BvVo5OjgN+3oK0hEWqIGOV+lDJ2ErzF7pYvoy8PeyrTZdUGJtl6yCJjJL2y0FYCOqnzXuzp94iPZXKCw=
+    - brasildotnet:{{SLACK_TOKEN}}
   email:
     recipients:
     - gustavo.ferrazfontes@gmail.com
