@@ -9,7 +9,7 @@ script:
 notifications:
   slack:
     rooms:
-      - brasildotnet:%SLACK_TOKEN%
+      - brasildotnet: $SLACK_TOKEN
   email:
     recipients:
       - gustavo.ferrazfontes@gmail.com
