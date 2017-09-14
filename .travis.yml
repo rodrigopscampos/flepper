@@ -9,7 +9,7 @@ script:
 notifications:
   slack:
     rooms:
-      - brasildotnet:hfolzaVNSDEKWPSRU6LgiQyj#flepper
+      - brasildotnet:$slack-token#flepper
   email:
     recipients:
       - gustavo.ferrazfontes@gmail.com
