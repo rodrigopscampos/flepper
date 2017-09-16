@@ -1,1 +1,1 @@
-./nuget.exe pack
+.\nuget.exe pack
