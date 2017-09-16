@@ -6,6 +6,12 @@ script:
   - dotnet restore
   - dotnet build
   - dotnet test Flepper.Tests.Unit/Flepper.Tests.Unit.csproj
+deploy:
+  skip_cleanup: true
+  privider: script
+  script: chmod +x ./deploy.sh $NUGET_API_KEY
+  on:
+    branch: master
 notifications:
   slack:
     rooms:
