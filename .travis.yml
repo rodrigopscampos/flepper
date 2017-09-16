@@ -14,16 +14,16 @@ deploy:
   script: chmod +x ./deploy.sh && ./deploy.sh $NUGET_API_KEY
   on:
     branch: gf/config-travis-deploy
-notifications:
-  slack:
-    rooms:
-      - brasildotnet:hfolzaVNSDEKWPSRU6LgiQyj#flepper
-  email:
-    recipients:
-      - gustavo.ferrazfontes@gmail.com
-      - nicolas.tcs@hotmail.com
-      - alberto.monteiro@live.com
-    on_success: always
-    on_failure: always
+# notifications:
+#   slack:
+#     rooms:
+#       - brasildotnet:hfolzaVNSDEKWPSRU6LgiQyj#flepper
+#   email:
+#     recipients:
+#       - gustavo.ferrazfontes@gmail.com
+#       - nicolas.tcs@hotmail.com
+#       - alberto.monteiro@live.com
+#     on_success: always
+#     on_failure: always
 
       
