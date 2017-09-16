@@ -8,7 +8,7 @@ script:
   - dotnet test Flepper.Tests.Unit/Flepper.Tests.Unit.csproj
 deploy:
   skip_cleanup: true
- - privider: script
+  provider: script
   script: chmod +x ./deploy.sh $NUGET_API_KEY
   on:
     branch: gf/config-travis-deploy
