@@ -2,6 +2,8 @@ language: csharp
 solution: Flepper.sln
 mono: none
 dotnet: 2.0.0
+before_install:
+ - chmod +x gradlew
 script:
   - dotnet restore
   - dotnet build
