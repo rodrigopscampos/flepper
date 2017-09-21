@@ -268,6 +268,7 @@ namespace Flepper.Tests.Unit.QueryBuilder.Commands
         [Fact]
         public void ShouldCreateSelectStatementWithCount()
         {
+
             var queryResult = FlepperQueryBuilder
                 .Select(Count("column2", "cl2"))
                 .From("User")
@@ -284,7 +285,7 @@ namespace Flepper.Tests.Unit.QueryBuilder.Commands
         public void ShouldCreateSelectStatementWithCountAndMultipleColumns()
         {
             var queryResult = FlepperQueryBuilder
-                .Select("column1", Count("column2", "cl2"),"column3")
+                .Select("column1", Count("column2", "cl2"), "column3")
                 .From("User")
                 .BuildWithParameters();
 

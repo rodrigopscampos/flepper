@@ -1,4 +1,6 @@
-﻿using Flepper.QueryBuilder.Base;
+﻿using System.Linq;
+using Flepper.QueryBuilder.Base;
+using Flepper.QueryBuilder.Operators.SqlFunctions;
 using Flepper.QueryBuilder.Utils.Extensions;
 
 namespace Flepper.QueryBuilder
@@ -13,7 +15,7 @@ namespace Flepper.QueryBuilder
 
         public IInsertIntoCommand Columns(params string[] columns)
         {
-            Command.AppendFormat("({0}) ", columns.JoinColumns());
+            Command.AppendFormat("({0}) ", columns.Select(x => new SqlColumn(x).ToString()).JoinColumns());
             return this;
         }
     }
